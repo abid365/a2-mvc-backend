@@ -17,7 +17,7 @@ const productSchema = new Schema<Product>({
   price: { type: Number },
   category: { type: String },
   tags: { type: [String] },
-  variants: variantSchema,
+  variants: [variantSchema],
   inventory: InventorySchema,
 });
 

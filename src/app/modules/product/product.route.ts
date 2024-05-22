@@ -5,4 +5,6 @@ const router = express.Router();
 
 // creating routes
 
-router.post('/api/products', ProductControllers.createProduct);
+router.post('/products', ProductControllers.createProduct);
+
+export const ProductRoutes = router;
