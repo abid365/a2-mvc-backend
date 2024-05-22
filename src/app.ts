@@ -4,10 +4,10 @@ import cors from 'cors';
 const port = 3000;
 
 app.use(express.json());
-app.use();
+app.use(cors());
 
 app.get('/', (req: Request, res: Response) => {
-  var a = 10;
+  const a = 10;
 
   res.send(a);
 });
