@@ -2,7 +2,7 @@ import { Schema, model } from 'mongoose';
 import { Product, Variant, Inventory } from './product/product.interface';
 
 const variantSchema = new Schema<Variant>({
-  type: { type: String, required: [true, 'Type is required'] },
+  type: { type: String, required: [true, 'Variant type is required'] },
   value: { type: String, required: [true, 'Value is required'] },
 });
 
