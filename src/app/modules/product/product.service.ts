@@ -19,6 +19,7 @@ const getProductById = async (productId: string) => {
   return result;
 };
 
+// update one
 export const ProductServices = {
   createProductIntoDb,
   getAllProductsFromDb,

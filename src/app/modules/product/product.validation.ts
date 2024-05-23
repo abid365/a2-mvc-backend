@@ -3,8 +3,8 @@ import { z } from 'zod';
 // zod validation
 // Variant Schema
 const variantValidationSchema = z.object({
-  type: z.string().nonempty('Type is required'),
-  value: z.string().nonempty('Value is required'),
+  type: z.string().min(5, { message: 'Variant Type is required' }),
+  value: z.string().min(5, { message: 'Value is required' }),
 });
 
 // Inventory Schema
